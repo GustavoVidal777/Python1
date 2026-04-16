@@ -20,15 +20,22 @@
 #     print ('Nenhum número par foi digitado!')
 
 Nota1 = int (input ('Nota 1: '))
+while Nota1 > 10 or Nota1 < 0:
+    Nota1 = int(input ('Você digitou a nota errada, corrija a nota 1 = '))
 Nota2 = int (input ('Nota 2: '))
+while Nota2 > 10 or Nota2 < 0:
+    Nota2 = int(input ('Você digitou a nota errada, corrija a nota 2 = '))
 Nota3 = int (input ('Nota 3: '))
+while Nota3 > 10 or Nota3 < 0:
+    Nota3 = int(input ('Você digitou a nota errada, corrija a nota 3 = '))
 Nota4 = int (input ('Nota 4: '))
+while Nota4 > 10 or Nota4 < 0:
+    Nota4 = int(input ('Você digitou a nota errada, corrija a nota 4 = '))
 
 media = (Nota1 + Nota2 + Nota3 + Nota4) /4
 
-if media >= 7:
-    print ('Parabéns você foi aprovado com média: {}' .format(media))
-elif media >= 6:
-    print ('Sua média foi {} , está de recuperação' .format(media))
-else:
-    print ('Infelizmente sua média foi {} você foi reprovado ' .format(media))
+print ('Media: {}' .format(media))
+# if Nota1 <= 10 and Nota2 <= 10 and Nota3 <= 10 and Nota4 <= 10:
+#     print ('Sua média final é = {}' .format(media))
+# else:
+#     print ('Alguma nota digita está incorreta!')
