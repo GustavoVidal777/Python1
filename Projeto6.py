@@ -29,3 +29,8 @@ conjunto_animais = set(lista) # retirar duplicidade transformando de lista para 
 print (conjunto_animais)
 lista_animais = list(conjunto_animais) #reconverter em lista
 print (lista_animais)
+
+def soma(a, b):
+    return a + b
+
+print(soma(1, 2))
